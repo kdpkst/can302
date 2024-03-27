@@ -1,0 +1,1 @@
+select spu.id, spu.name, spu.description from product_category inner join spu on product_category.cat_id = spu.category_id where product_category.parent_id = (select parent_id from product_category where name = "Smart Phones") order by spu.name;

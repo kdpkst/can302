@@ -1,0 +1,1 @@
+select id, name, description from spu where category_id = (select cat_id from product_category where name = "Smart Phones") order by name;
